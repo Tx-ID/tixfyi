@@ -2,6 +2,7 @@
 
 import { OsuIcon } from "@/components/osu.js"
 import { useEffect, useState } from "react"
+import Image from 'next/image'
 
 const video_url = "https://cdn.discordapp.com/attachments/694736624071737376/1159494506538864701/kokonaenae.mp4"
 
@@ -15,7 +16,7 @@ export default function Home() {
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-info shrink-0 w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
         <span>{alertText}</span>
         <div>
-          <button onClick={()=>{setIsOpen(false)}} className="btn btn-sm btn-primary">OK</button>
+          <button onClick={() => { setIsOpen(false) }} className="btn btn-sm btn-primary">OK</button>
         </div>
       </div>
 
@@ -25,22 +26,22 @@ export default function Home() {
       <p className="mt-2 mb-2">SOCIAL</p>
       <div className="flex flex-wrap space-x-4">
         <a href="https://twitter.com/tixosu" className="btn btn-sm btn-neutral">
-          <img id="white" className="h-4 w-4" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg"></img>
+          <Image id="white" className="h-4 w-4" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg"></Image>
           <p>TWITTER</p>
         </a>
-        <a className="btn btn-sm btn-neutral">
-          <img href="https://www.instagram.com/emm_ment/" id="white" className="h-4 w-4" src="https://icons.getbootstrap.com/assets/icons/instagram.svg"></img>
+        <a href="https://www.instagram.com/emm_ment/" className="btn btn-sm btn-neutral">
+          <Image id="white" className="h-4 w-4" src="https://icons.getbootstrap.com/assets/icons/instagram.svg"></Image>
           <p>INSTAGRAM</p>
         </a>
         <a href="https://www.linkedin.com/in/emment/" className="btn btn-sm btn-neutral">
-          <img id="white" className="h-4 w-4" src="https://icons.getbootstrap.com/assets/icons/linkedin.svg"></img>
+          <Image id="white" className="h-4 w-4" src="https://icons.getbootstrap.com/assets/icons/linkedin.svg"></Image>
           <p>LINKEDIN</p>
         </a>
       </div>
       <p className="mt-2 mb-2 uppercase">miscellaneous</p>
       <div className="flex flex-wrap mb-4 space-x-4">
-        <button onClick={()=>{setAlert("Discord username has been copied to clipboard."); setIsOpen(true); navigator.clipboard.writeText("tix1");}} className="btn btn-sm btn-neutral">
-          <img id="white" className="h-4 w-4" src="https://icons.getbootstrap.com/assets/icons/discord.svg"></img>
+        <button onClick={() => { setAlert("Discord username has been copied to clipboard."); setIsOpen(true); navigator.clipboard.writeText("tix1"); }} className="btn btn-sm btn-neutral">
+          <Image id="white" className="h-4 w-4" src="https://icons.getbootstrap.com/assets/icons/discord.svg"></Image>
           <p>DISCORD</p>
         </button>
         <a href="https://osu.ppy.sh/users/11421465" className="btn btn-sm btn-neutral">
@@ -48,7 +49,7 @@ export default function Home() {
           <p>OSU!</p>
         </a>
         <a href="https://www.roblox.com/users/65461579/profile" className="btn btn-sm btn-neutral">
-          <img id="white" className="h-4 w-4" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Roblox_Logo.svg"></img>
+          <Image id="white" className="h-4 w-4" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Roblox_Logo.svg"></Image>
           <p>ROBLOX</p>
         </a>
       </div>
