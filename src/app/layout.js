@@ -7,6 +7,8 @@ export const metadata = {
   title: `Tix's Portal`,
   description: '',
 
+  metadataBase: new URL('https://tix.fyi'),
+
   openGraph: {
     title: `Tix's Portal`,
     description: `Portal to my Social Media`,
