@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 #video {
-    -webkit-filter: opacity(60%);
-    filter: opacity(60%);
+    -webkit-filter: opacity(50%);
+    filter: opacity(50%);
 }
 
 #white {
@@ -17,9 +17,9 @@
 #alert {
     overflow: hidden;
     top: 0.5rem;
-    transition: top 1s;
+    transition: top 0.5s;
 }
 
-#alert.open {
+#alert.alert-closed {
     top: -20%;
 }
