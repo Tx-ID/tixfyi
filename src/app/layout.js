@@ -21,11 +21,25 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
   return (
+
     <html lang="en" data-theme="night" id="html">
+
+      <head>
+
+        <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+      </head>
+
       <body className={lexend.className + " bg-zinc-900 min-w-screen min-h-screen flex flex-col items-center justify-center"}>
+
         {children}
+
       </body>
+
     </html>
+
   )
+
 }
